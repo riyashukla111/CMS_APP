@@ -24,11 +24,3 @@ class UserSerializer(serializers.ModelSerializer):
         # Save the user object with the hashed password
         user.save()
         return user
-
-
-
-# class SignupSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = User
-#         fields = ['username', 'email', 'password']
-#         extra_kwargs = {'password': {'write_only': True}}
